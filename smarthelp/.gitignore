@@ -39,6 +39,7 @@ yarn-error.*
 *-credentials.json
 *-service-account*.json
 smarthelp-*.json
+google-services.json
 
 # typescript
 *.tsbuildinfo

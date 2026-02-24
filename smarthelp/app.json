@@ -21,6 +21,7 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "package": "com.alhussain.smarthelp",
+      "googleServicesFile": "google-services.json",
       "permissions": [
         "CAMERA",
         "RECORD_AUDIO",
