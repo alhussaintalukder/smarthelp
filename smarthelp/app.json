@@ -37,6 +37,7 @@
     },
     "plugins": [
       "expo-router",
+      "./plugins/withAbiSplit",
       [
         "expo-splash-screen",
         {
@@ -63,7 +64,20 @@
         }
       ],
       "expo-audio",
-      "expo-audio"
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "useLegacyPackaging": false,
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0",
+            "kotlinVersion": "1.9.25"
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
